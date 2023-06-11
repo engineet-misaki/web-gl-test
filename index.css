@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  color: #e9cd7d;
+  position: relative;
+  height: 100dvh;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+}
+p {
+  margin: 0;
+}
+canvas {
+  position: absolute;
+  top: 80px;
+}
+.container {
+  position: absolute;
+  top: 0;
+  height: 100lvh;
+  width: 100vw;
+  max-width: 600px;
+  z-index: 1;
+}
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  margin: 24px;
+  /* animation: popup 2s cubic-bezier(0.22, 1, 0.36, 1) 1 forwards; */
+  animation: popup 2s;
+}
+.contents {
+  font-weight: 600;
+  padding: 20px;
+  opacity: 0;
+  transition: all 1s;
+}
+.contents.active {
+  opacity: 1;
+}
+.contents span {
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  display: block;
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(40px) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  80%,
+  100% {
+    opacity: 1;
+  }
+}

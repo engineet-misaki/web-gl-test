@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>サンプル</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script>
+      $(function () {
+        const style = '<link rel="stylesheet" href="index.css">';
+        $("head link:last").after(style);
+      });
+    </script>
+
+    <script src="https://pixijs.download/release/pixi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <p class="title">ライオンのおやつ</p>
+      <div id="target" class="contents">
+        <p>
+          人生最後の時を穏やかに過ごすための場所であるホスピス（ライオンの家）に行くことになった雫の物語。<br /><br />
+          この本を読んで一番最初に思ったのは、一生懸命に生きようということだった。<br />
+          雫が死と直面して考える様々なことがすごく心に響く。<br />
+          人生を味わいつくそう！そう思える一冊だった。<br /><br />
+          <span
+            >------------------<br />
+            すべては、私の人生の結果、<br />
+            生きてきた時間の結晶が、今だ。<br />
+            だから、私が私の人生を祝福しなくて、<br />
+            誰が祝福するの？<br />
+            <span
+              style="
+                display: block;
+                text-align: right;
+                font-size: 12px;
+                margin-top: 8px;
+              "
+              >ライオンのおやつより</span
+            >
+            ------------------</span
+          >
+        </p>
+      </div>
+    </div>
+    <script src="./dist/index.js"></script>
+  </body>
+</html>
